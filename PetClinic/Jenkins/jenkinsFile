@@ -33,18 +33,13 @@ node {
         def server= Artifactory.server 'Artifactory'
             def uploadSpec= """{
                 "files": [{
-                "pattern": "/root/.jenkins/workspace/Pet-Clinic/petclinic/target/petclinic.war",
+                "pattern": "/root/.jenkins/workspace/PetClinicProjectnew/PetClinic/Code/petclinic/target/petclinic.war",
                 "target": "petclinic"}]
             }"""
         server.upload(uploadSpec)
      }
     }
   
-   stage('Docker-Stage-Deployment') {
-   sh label: '', script: 'docker-compose up -d --build'
-  } 
-   
- }
 
 
 notify('Job Completed')   
