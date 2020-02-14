@@ -4,7 +4,7 @@ node {
  notify('Job Started') 
      
   stage('Git-Checkout') {
-   git 'https://github.com/NiharSibu/PetClinicProject.git'
+   git 'https://github.com/imbhascker13/PetClinic.git'
   }
     
  def project_path="PetClinic/Code/petclinic"
