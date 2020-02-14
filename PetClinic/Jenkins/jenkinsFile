@@ -33,7 +33,7 @@ node {
         def server= Artifactory.server 'Artifactory'
             def uploadSpec= """{
                 "files": [{
-                "pattern": "/root/.jenkins/workspace/Pet-Clinic/petclinic/target/petclinic.war",
+                "pattern": "/root/.jenkins/workspace/PetClinicProjectnew/PetClinic/Code/petclinic/target/petclinic.war",
                 "target": "petclinic"}]
             }"""
         server.upload(uploadSpec)
@@ -56,7 +56,7 @@ notify('Job Completed')
 
 def notify(status){
     emailext (
-	to: "amitvashist7@gmail.com",
+	to: "NiharSibu@gmail.com",
 	subject: "${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
 	 body: """<p>${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
 	<p>Check console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a></p>""",
