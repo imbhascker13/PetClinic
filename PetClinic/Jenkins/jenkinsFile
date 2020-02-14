@@ -39,8 +39,8 @@ node {
         server.upload(uploadSpec)
      }
     }
-  
-
+  }
+}
 
 notify('Job Completed')   
 } catch (err) {
