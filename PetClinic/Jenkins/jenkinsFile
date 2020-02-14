@@ -40,7 +40,6 @@ node {
      }
     }
   }
-}
 
 notify('Job Completed')   
 } catch (err) {
