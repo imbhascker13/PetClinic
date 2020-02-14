@@ -1,13 +1,13 @@
 
-de {
+node {
  try  {
  notify('Job Started') 
      
   stage('Git-Checkout') {
-   git 'https://github.com/NiharSibu/PetClinic.git'
+   git 'https://github.com/NiharSibu/PetClinicProject.git'
   }
     
- def project_path="01-Jenkins/Code/petclinic"
+ def project_path="PetClinic/Code/petclinic"
  
  dir(project_path) {
     
