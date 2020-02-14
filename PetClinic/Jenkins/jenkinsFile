@@ -7,7 +7,7 @@ node {
    git 'https://github.com/imbhascker13/PetClinic.git'
   }
     
- def project_path="PetClinic/Code/petclinic"
+ def project_path="PetClinic/Code/petclinic/"
  
  dir(project_path) {
     
